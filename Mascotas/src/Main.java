@@ -1,3 +1,4 @@
+import java.sql.SQLOutput;
 import java.util.Scanner;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
@@ -44,8 +45,11 @@ public class Main {
                 pajaro1.mostrarInfo();
                 pajaro1.sonidoPajaro();
                 break;
+            case 0:
+                System.out.println("SALIENDO......");
+                break;
                 default:
-                    System.out.println("Eliga una opcion valida");
+                    System.out.println("Esa es exotica bro,no la puedes ver");
         }
 
     }while (opcion != 0);
