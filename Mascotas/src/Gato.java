@@ -5,7 +5,7 @@ public class Gato extends Mascotas{
         this.raza = raza;
     }
     public void maullar() {
-        System.out.println( getNombre() + " dice: ¡miaaaaauuuuuuu!");
+        System.out.println( getNombre() + " miaaaaauuuuuuu!");
     }
 
     @Override

@@ -9,7 +9,9 @@ public class Main {
     int opcion;
     //contrsuctores
         Perro perro1 = new Perro("Hulk", 3,"Pitbull");
+        Perro perro2 = new Perro("Amarilla", 2,"Golden Retriever");
         Gato gato1 = new Gato("Choncho", 17,"Siames");
+        Gato gato2 = new Gato("Totis", 4,"Sin raza");
         Serpiente serpiente1 = new Serpiente("Andrea", 19,"Elapidae");
         Cocodrilo cocodrilo1 = new Cocodrilo("Roberto", 15,"Crocodylus moreletii");
         Pajaro pajaro1 = new Pajaro("Piolin", 2,"Canario");
@@ -21,6 +23,8 @@ public class Main {
         System.out.println("3- Serpiente");
         System.out.println("4- Cocodrilo");
         System.out.println("5- Pajaro ");
+        System.out.println("6- Perro");
+        System.out.println("7- Gato");
         System.out.println("0- Salir");
         opcion = sc.nextInt();
 
@@ -44,6 +48,15 @@ public class Main {
             case 5:
                 pajaro1.mostrarInfo();
                 pajaro1.sonidoPajaro();
+                break;
+            case 6:
+                perro2.mostrarInfo();
+                perro2.comer();
+                break;
+            case 7:
+                gato2.mostrarInfo();
+                gato2.maullar();
+                gato2.comer();
                 break;
             case 0:
                 System.out.println("SALIENDO......");
